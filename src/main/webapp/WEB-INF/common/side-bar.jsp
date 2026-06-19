@@ -1,0 +1,70 @@
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+
+    <div class="logo">
+        <h2>Inventory</h2>
+        <i class="fa-solid fa-bars toggle-btn" id="toggle"></i>
+    </div>
+
+    <div class="menu">
+        <ul id="sidebar-menu">
+<%--            <li>--%>
+<%--                <a href="/#">--%>
+<%--                    <i class="fa-solid fa-house"></i>--%>
+<%--                    <span class="text">Dashboard</span>--%>
+<%--                </a>--%>
+<%--            </li>--%>
+            <li>
+                <a href="/item">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <span class="text">Item</span>
+                </a>
+            </li>
+            <li>
+                <a href="/measurement">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span class="text">Measurement Type</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/itemType">
+                    <i class="fa-solid fa-box"></i>
+                    <span class="text">itemType</span>
+                </a>
+            </li>
+            <li>
+                <a href="/vendor">
+                    <i class="fa-solid fa-truck"></i>
+                    <span class="text">Vendor</span>
+                </a>
+            </li>
+            <li>
+                <a href="/taxType">
+                    <i class="fa-solid fa-percent"></i>
+                    <span class="text">Tax Type</span>
+                </a>
+            </li>
+            <li>
+                <a href="/purchaseOrder">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span class="text">Purchase Order</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const currentPath = window.location.pathname;
+        const menuLinks = document.querySelectorAll("#sidebar-menu a");
+        menuLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === currentPath) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>

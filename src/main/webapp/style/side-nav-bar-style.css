@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#111827;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    transition:0.4s;
+    overflow:hidden;
+}
+
+.sidebar.close{
+    width:80px;
+}
+
+.logo{
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo h2{
+    font-size:22px;
+    white-space:nowrap;
+}
+
+.toggle-btn{
+    font-size:20px;
+    cursor:pointer;
+    color:white;
+}
+
+/* ================= MENU ================= */
+
+.menu{
+    padding-top:20px;
+}
+
+.menu ul{
+    list-style:none;
+    padding-left:0;
+}
+
+.menu ul li{
+    margin:8px 0;
+}
+
+.menu ul li a{
+    text-decoration:none;
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:14px 20px;
+    transition:0.3s;
+    white-space:nowrap;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active{
+    background:#2563eb;
+    border-radius:10px;
+    margin:0 10px;
+}
+
+.menu ul li a i{
+    min-width:25px;
+    text-align:center;
+    font-size:18px;
+}
+
+.sidebar.close .text,
+.sidebar.close .logo h2{
+    display:none;
+}
+
+/* ================= MAIN ================= */
+
+.main{
+    margin-left:258px;
+    padding:8px;
+    transition:0.4s;
+}
+
+.main.expand{
+    margin-left:80px;
+}
+
+.page-card{
+    background:white;
+    border-radius:5px;
+    padding:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
