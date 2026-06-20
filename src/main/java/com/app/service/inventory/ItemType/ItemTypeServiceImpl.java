@@ -25,7 +25,7 @@ public class ItemTypeServiceImpl implements ItemTypeService{
         String startNo = String.valueOf(param.get("startNo"));
         String lastNo = String.valueOf(param.get("lastNo"));
 
-        Long id=utility.longNullValue(param.get("id"));
+        Long id = utility.longNullValue(param.get("id"));
 
         ItemTypeEntity entity= new ItemTypeEntity();
         if (id!=null){

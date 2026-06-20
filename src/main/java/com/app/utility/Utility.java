@@ -2,19 +2,15 @@ package com.app.utility;
 
 import org.springframework.stereotype.Component;
 
-import java.text.Format;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Formatter;
-import java.util.Objects;
 
 @Component
 public class Utility {
 
     public String getCurrentDateInUsFormat(){
 
-        DateTimeFormatter df=DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate date= LocalDate.now();
         return date.format(df);
     }

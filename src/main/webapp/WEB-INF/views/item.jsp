@@ -270,7 +270,7 @@
               type :"GET",
               success : function (res) {
                   if (res) {
-                      console.log("item Name : " + JSON.stringify(res))
+                      // console.log("item Name : " + JSON.stringify(res))
                       $("#item_id").val(res.id);
                       $("#itemName").val(res.itemName);
                       $("#itemCode").val(res.itemCode);

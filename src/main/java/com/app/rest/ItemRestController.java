@@ -1,14 +1,11 @@
 package com.app.rest;
 
-import com.app.entity.ItemTypeEntity;
 import com.app.service.inventory.item.ItemService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.http.HttpRequest;
 import java.util.Map;
 
 @RestController
